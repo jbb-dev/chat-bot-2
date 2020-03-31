@@ -31,7 +31,7 @@ Contact.propTypes = {
     name : PropTypes.string.isRequired,
     avatar : PropTypes.string.isRequired,
     online : PropTypes.bool.isRequired,
-    text : PropTypes.string.isRequired
+    text : PropTypes.object.isRequired
 }
 
 export default Contact
