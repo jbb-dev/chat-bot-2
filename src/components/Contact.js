@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 class Contact extends Component {
     render() {
-        const {name, avatar, online, text} = this.props
+        const {name, avatar, online} = this.props
         return (
             <div className="Contact">    
                 <img className="avatar" src={avatar} alt="avatar"></img>
@@ -16,7 +16,7 @@ class Contact extends Component {
 
                     <div className="status">
                         <div className={online ? "status-online" : "status-offline"}></div>   
-                        <div className="status-text">{online ? text.online : text.offline}</div>
+                        <div className="status-text">{online ? "I'am online" : "I'am offline"}</div>
                     </div>   
                              
                 </div>
